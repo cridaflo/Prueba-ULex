@@ -1,1 +1,7 @@
-<p>productos works!</p>
+<div *ngFor="let category of categories">
+<p class="category-name">{{category.name}}</p>
+<app-product-list
+[products]="category.products"
+>
+</app-product-list>
+</div>

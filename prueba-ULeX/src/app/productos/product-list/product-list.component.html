@@ -1,0 +1,12 @@
+<div *ngFor="let product of products">
+    <div *ngIf="product.kind == 1">
+        <app-small-product-card
+        [product]="product"
+        ></app-small-product-card>
+    </div>
+    <div *ngIf="product.kind == 2">
+        <app-large-product-card
+        [product]="product"
+        ></app-large-product-card>
+    </div>
+</div>

@@ -1,13 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     font-family: 'Nunito', sans-serif;
-    font-size: 14px;
+    padding:26px;
 }
 
 .app-button {
-    background-color:#5ea9ff;
+    font-size: 25px;
     color: #dce3e8;
-    height: 90px;
+    height: 65px;
     border-radius: 10px;
     border: 0;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #E8E8E8, 0 6px 20px 0 #E8E8E8;
+    overflow: hidden;
+    
+    margin: 35px 0;
+
+    .card-header {
+        border-bottom: solid #E8E8E8;
+
+    }
+    .card-body {
+        display: flex;
+        justify-content:space-between;
+        padding: 35px;
+        .app-button {
+            width: 140px;
+            background-color: #006EFF;
+        }
+    }
+    .card-body > div {
+        display: flex;
+        align-items: center
+    }
+}
+
+.product-name{
+    font-size: 24px;
+    color: black;
+    margin: 0;
+}
+.product-price{
+    font-weight: bold;
+    color: #585858;
+    font-size: 28px;
+    margin: 0;
+}
+.category-name{
+    color: #0571FF;
+    border-bottom: solid #C5C5C5;
+    border-bottom-width: 2px;
+    font-size: 35px;
 }
