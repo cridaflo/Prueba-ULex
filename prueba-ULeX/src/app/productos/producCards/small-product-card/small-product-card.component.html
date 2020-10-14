@@ -1,1 +1,18 @@
-<img src="https://assets.compramass.com/products/{{product.ean}}-80@3x.jpg" alt="">
+<div class="card">
+    <div class="card-body">
+        <div>
+            <img src="https://assets.compramass.com/products/{{product.ean}}@3x.jpg" style="width: 115px; margin-left: -35px;" height="auto" alt="">
+        </div>
+        <div>
+            <div>
+                <p class="product-name">{{product.name}}</p>
+                <p class="product-price">{{product.price | currency:'COP':'symbol-narrow': '1.0-0'}}</p>
+            </div>
+        </div>
+        <div >
+            <button class="app-button">
+                Comprar
+            </button>
+        </div>
+    </div>
+</div>

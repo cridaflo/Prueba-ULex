@@ -1,23 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    font-family: 'Nunito', sans-serif;
-    padding:26px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 25px;
 }
 
 .app-button {
-    font-size: 25px;
-    color: #dce3e8;
-    height: 65px;
-    border-radius: 10px;
+    font-size: 21px;
+    color: white;
+    height: 50px;
+    border-radius: 6px;
     border: 0;
 }
 
 .card {
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 #E8E8E8, 0 6px 20px 0 #E8E8E8;
-    overflow: hidden;
-    
+    border-radius: 12px;
+    box-shadow: 0 0 40px#E8E8E8;
     margin: 35px 0;
+    overflow: hidden;
 
     .card-header {
         border-bottom: solid #E8E8E8;
@@ -28,8 +27,9 @@ body {
         justify-content:space-between;
         padding: 35px;
         .app-button {
-            width: 140px;
+            width: 115px;
             background-color: #006EFF;
+            
         }
     }
     .card-body > div {
@@ -39,19 +39,47 @@ body {
 }
 
 .product-name{
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     margin: 0;
 }
 .product-price{
     font-weight: bold;
     color: #585858;
-    font-size: 28px;
+    font-size: 30px;
     margin: 0;
 }
 .category-name{
     color: #0571FF;
     border-bottom: solid #C5C5C5;
     border-bottom-width: 2px;
-    font-size: 35px;
+    font-size: 30px;
+}
+
+.login-box {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 330px;
+}
+
+.login-button {
+    width: 100%;
+    font-size: 32px;
+    background-color:#5ea9ff;
+}
+
+.bienvenido-text {
+    font-weight: bold;
+    font-size: 30px;
+    color: #5B5B5B;
+    margin-bottom: 25px;
 }
