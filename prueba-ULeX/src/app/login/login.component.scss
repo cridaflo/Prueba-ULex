@@ -1,0 +1,17 @@
+.login-box {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .login-button {
+      width: 100%;
+      font-size: 32px;
+  }
