@@ -2,6 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0 25px;
+    margin: 0 auto;
 }
 
 .app-button {
@@ -57,8 +58,8 @@ body {
 }
 
 .login-box {
-    display: flex;
     height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -74,12 +75,12 @@ body {
 .login-button {
     width: 100%;
     font-size: 32px;
-    background-color:#5ea9ff;
+    background-color:#5EA9FF;
 }
 
 .bienvenido-text {
     font-weight: bold;
     font-size: 30px;
-    color: #5B5B5B;
+    color: #424242;
     margin-bottom: 25px;
 }
