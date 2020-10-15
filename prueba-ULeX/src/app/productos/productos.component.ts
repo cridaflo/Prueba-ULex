@@ -14,6 +14,10 @@ export class ProductosComponent implements OnInit {
     private getProduct: GetProductsService
   ) { }
 
+
+  /**
+   * Retrives products and categories data from server
+   */
   ngOnInit(): void {
     this.getProduct.getProducts()
     .subscribe(data => {

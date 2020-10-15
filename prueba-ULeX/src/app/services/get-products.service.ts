@@ -10,6 +10,10 @@ export class GetProductsService {
     private http: HttpClient
   ) { }
 
+  /**
+   * Retrives data form server and organices it in order to be easily processed by components
+   * @returns Observable with processed data
+   */
   getProducts() {
     return this.http.get('http://www.mocky.io/v2/5ed0b4443500005b00ff9e02')
     .pipe(
@@ -19,6 +23,12 @@ export class GetProductsService {
     );
   }
 
+
+  /**
+   * Sorts products and categories by their id and associates each products with its respective categorie
+   * @param data Raw data retrived from server
+   * @returns Processed data
+   */
   organiceData(data) {
     const categories = data.categories;
     categories.forEach(element => {

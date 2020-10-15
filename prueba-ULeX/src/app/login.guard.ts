@@ -11,6 +11,11 @@ export class LoginGuard implements CanActivate {
     private router: Router,
   ) { }
 
+  /**
+   * Checks if the user is logged in an redirects it to the prosucts views if necessary. Otherwise redirects it to login if necessary.
+   * @param next next router state
+   * @param state current router state
+   */
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {

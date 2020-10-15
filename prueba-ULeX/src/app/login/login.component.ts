@@ -14,6 +14,9 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * Setting of a login flag and routing to products view
+   */
   login() {
     localStorage.setItem('logedIn', 'True');
     this.router.navigate(['productos']);
